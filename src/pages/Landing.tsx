@@ -5,7 +5,6 @@ import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, FileCode } from "lucide-react";
 
 const Landing = () => {
   const products = [
@@ -69,76 +68,6 @@ const Landing = () => {
 
       {/* Features Section */}
       <Features />
-
-      {/* Open Source Section */}
-      <section id="opensource" className="py-24 px-4">
-        <div className="container mx-auto max-w-7xl">
-          <Card className="p-8 md:p-12 bg-white/10 backdrop-blur-md border-white/20">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium border border-white/30">
-                  <Github className="h-4 w-4" />
-                  Open Source
-                </div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-white drop-shadow-lg">
-                  Built on Open Source Principles
-                </h2>
-                <p className="text-white/80">
-                  We believe in the power of community. Our tools are built with transparency, 
-                  and we actively contribute to the open-source ecosystem. Explore our repositories, 
-                  contribute code, or use our components in your own projects.
-                </p>
-                <ul className="space-y-2 text-white/90">
-                  <li className="flex items-start gap-2">
-                    <span className="text-white mt-1">✓</span>
-                    <span>MIT License for core components</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-white mt-1">✓</span>
-                    <span>Active community contributions welcome</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-white mt-1">✓</span>
-                    <span>Comprehensive documentation and examples</span>
-                  </li>
-                </ul>
-                <div className="flex gap-4">
-                  <Button asChild className="bg-white text-purple-900 hover:bg-white/90 shadow-lg">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      Explore GitHub
-                    </a>
-                  </Button>
-                  <Button variant="outline" asChild className="border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20">
-                    <a href="#">Contributor Guide</a>
-                  </Button>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="absolute inset-0 bg-white/10 blur-3xl rounded-full" />
-                <div className="relative bg-white/10 backdrop-blur-md p-6 rounded-lg border border-white/20">
-                  <FileCode className="h-12 w-12 text-white mb-4" />
-                  <h3 className="text-xl font-semibold mb-2 text-white">Popular Repositories</h3>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-center justify-between">
-                      <span className="text-white/80">sfw-matching-engine</span>
-                      <span className="text-white font-mono">⭐ 2.4k</span>
-                    </li>
-                    <li className="flex items-center justify-between">
-                      <span className="text-white/80">sfw-ai-components</span>
-                      <span className="text-white font-mono">⭐ 1.8k</span>
-                    </li>
-                    <li className="flex items-center justify-between">
-                      <span className="text-white/80">sfw-analytics-sdk</span>
-                      <span className="text-white font-mono">⭐ 1.2k</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-      </section>
 
       {/* Figma Section */}
       <section id="figma" className="py-24 px-4">
