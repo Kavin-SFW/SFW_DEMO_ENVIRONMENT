@@ -1,5 +1,3 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import sfwLogo from "@/assets/sfw-logo.svg";
 
 const Footer = () => {
@@ -13,23 +11,6 @@ const Footer = () => {
             <p className="text-sm text-white/70">
               Building the future of sales, matching, and financial management with AI-powered solutions.
             </p>
-            <div className="flex gap-2">
-              <Button size="icon" variant="ghost" asChild className="text-white/70 hover:text-white hover:bg-white/10">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button size="icon" variant="ghost" asChild className="text-white/70 hover:text-white hover:bg-white/10">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button size="icon" variant="ghost" asChild className="text-white/70 hover:text-white hover:bg-white/10">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <Twitter className="h-5 w-5" />
-                </a>
-              </Button>
-            </div>
           </div>
 
           {/* Softworks Link - Right Side */}
