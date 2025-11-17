@@ -177,7 +177,7 @@ const Navbar = () => {
                   onClick={() => setIsVideoDialogOpen(true)}
                   className="cursor-pointer"
                 >
-                  SFW Video
+                  SmartClinic
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
