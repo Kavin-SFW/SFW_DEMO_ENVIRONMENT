@@ -26,6 +26,16 @@ const Navbar = () => {
     { name: "Clinic Management System", url: "https://smartclinic.lovable.app" },
   ];
 
+  const figmaLinks = [
+    { name: "Resolve Field Service", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=0%3A1&node-id=3-6&p=f&viewport=185%2C231%2C0.11&t=jeAarDPWJSN3VTlz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3%3A2" },
+    { name: "Digital Transformation", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=4%3A13&node-id=4-36&viewport=4%2C367%2C0.05&t=ZJA8FdCBU62taAqx-1&scaling=contain&content-scaling=fixed&starting-point-node-id=4%3A14" },
+    { name: "Kiosk System", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=5%3A53&node-id=5-54&p=f&viewport=40%2C428%2C0.07&t=rHj19TtFcQLylHHA-1&scaling=contain&content-scaling=fixed" },
+    { name: "Token Management System", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=5%3A69&node-id=5-74&p=f&viewport=183%2C150%2C0.33&t=ekXxESz65XeT6frH-1&scaling=contain&content-scaling=fixed&starting-point-node-id=5%3A70" },
+    { name: "Appointment Booking System", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=5%3A91&node-id=5-95&viewport=202%2C141%2C0.28&t=IcFr4dcam8aU0Xet-1&scaling=contain&content-scaling=fixed&starting-point-node-id=5%3A92" },
+    { name: "SalesBot-AI-Conversational-Sales-Analytics-Platform", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=29%3A9351&node-id=29-9360&p=f&viewport=427%2C325%2C0.15&t=XAR5ssidOmpwOqH3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A9352" },
+    { name: "Gen-AI-SFW-Matching-Tool", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=29%3A9325&node-id=29-9334&viewport=40%2C446%2C0.06&t=V1lOI4s9TkbGhJsv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A9326" },
+  ];
+
   const caseStudyLinks = [
     { name: "Field Service Management", url: "https://sfwtechnologies-my.sharepoint.com/:v:/p/sivakumar/ES3OjFvorX9NnWKMHvPRV6cByHn5TY5TOXU6EQMzgRC9Kg" },
     { name: "Digital Transformation", url: "https://sfwtechnologies-my.sharepoint.com/:v:/p/sivakumar/EUNQgoiEGrxNro8KNoNO8SQBQWL8ywkV_TGeHF9nHP_A5A" },
@@ -118,10 +128,26 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Figma */}
-            <a href="#figma" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors">
-              Figma
-            </a>
+            {/* Figma Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors">
+                Figma <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-72 bg-white backdrop-blur-md">
+                {figmaLinks.map((figma) => (
+                  <DropdownMenuItem key={figma.name} asChild>
+                    <a
+                      href={figma.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer"
+                    >
+                      {figma.name}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
 
             {/* CTA Buttons */}
             <Link to="/login">
@@ -194,9 +220,21 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
-              <a href="#figma" className="block py-2 text-sm text-gray-700 hover:text-gray-900 transition-colors">
-                Figma
-              </a>
+              <div className="space-y-2">
+                <p className="text-xs font-semibold text-gray-500 uppercase">Figma</p>
+                {figmaLinks.map((figma) => (
+                  <a
+                    key={figma.name}
+                    href={figma.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-2 text-sm text-gray-700 hover:text-gray-900 transition-colors pl-4"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {figma.name}
+                  </a>
+                ))}
+              </div>
             </div>
             <div className="border-t border-gray-200 pt-4 space-y-2">
               <Link to="/login" className="block" onClick={() => setIsMobileMenuOpen(false)}>
