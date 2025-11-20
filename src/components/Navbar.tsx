@@ -179,6 +179,16 @@ const Navbar = () => {
                 >
                   SFW Video
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a
+                    href="https://sfwtechnologies-my.sharepoint.com/personal/harikrishna_sfwtechnologies_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fharikrishna%5Fsfwtechnologies%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FScreen%20Recording%202025%2D11%2D17%20190510%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E75bf024f%2D7bf6%2D4c35%2D9b67%2Da2e8077e25f2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer"
+                  >
+                    Diet App
+                  </a>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -279,6 +289,15 @@ const Navbar = () => {
                 >
                   SFW Video
                 </button>
+                <a
+                  href="https://sfwtechnologies-my.sharepoint.com/personal/harikrishna_sfwtechnologies_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fharikrishna%5Fsfwtechnologies%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FScreen%20Recording%202025%2D11%2D17%20190510%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E75bf024f%2D7bf6%2D4c35%2D9b67%2Da2e8077e25f2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block py-2 text-sm text-gray-700 hover:text-gray-900 transition-colors pl-4"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Diet App
+                </a>
               </div>
             </div>
             <div className="border-t border-gray-200 pt-4 space-y-2">
