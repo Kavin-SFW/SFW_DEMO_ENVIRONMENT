@@ -34,7 +34,7 @@ const Navbar = () => {
   const productLinks = [
     { name: "SFW Matching Tool", url: "https://sfwmatchingtool.vercel.app/" },
     { name: "SFW AI Sales Bot", url: "https://sfwtechnologiesrag.vercel.app/" },
-    { name: "Executive Financial Management Dashboard", url: "https://qxxcbwpmeasz5qsuscyfnt.streamlit.app/" },
+    { name: "Executive Financial Management Dashboard", url: "https://sfwexecutivedashboard.streamlit.app/" },
   ];
 
   const applicationLinks = [
@@ -177,7 +177,7 @@ const Navbar = () => {
                   onClick={() => setIsVideoDialogOpen(true)}
                   className="cursor-pointer"
                 >
-                  SmartClinic
+                  SFW Video
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
