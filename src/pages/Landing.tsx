@@ -36,6 +36,16 @@ const Landing = () => {
       ],
       demoUrl: "https://sfwexecutivedashboard.streamlit.app/",
     },
+    {
+      name: "SFW Zerra",
+      description: "A powerful solution designed to streamline operations and enhance productivity.",
+      features: [
+        "Modern user interface",
+        "Efficient workflow management",
+        "Advanced functionality",
+      ],
+      demoUrl: "https://sfw-zerra.vercel.app/",
+    },
   ];
 
 
