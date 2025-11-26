@@ -35,6 +35,7 @@ const Navbar = () => {
     { name: "SFW Matching Tool", url: "https://sfwmatchingtool.vercel.app/" },
     { name: "SFW AI Sales Bot", url: "https://sfwtechnologiesrag.vercel.app/" },
     { name: "Executive Financial Management Dashboard", url: "https://sfwexecutivedashboard.streamlit.app/" },
+    { name: "SFW Zerra", url: "https://sfw-zerra.vercel.app/" },
   ];
 
   const applicationLinks = [
