@@ -44,7 +44,7 @@ const Landing = () => {
         "Efficient workflow management",
         "Advanced functionality",
       ],
-      demoUrl: "https://sfw-zerra.vercel.app/",
+      demoUrl: "https://zerra-2025.vercel.app/",
     },
   ];
 
