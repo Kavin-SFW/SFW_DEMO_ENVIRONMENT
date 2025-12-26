@@ -43,6 +43,7 @@ const Navbar = () => {
     { name: "Project Management Software", url: "https://gcc-ui-production.up.railway.app/" },
     { name: "Learning management System", url: "https://lms-ui-production.up.railway.app/" },
     { name: "Clinic Management System", url: "https://smartclinic.lovable.app" },
+    { name: "CRM", url: "https://dev-crm.up.railway.app/" },
   ];
 
   const figmaLinks = [
