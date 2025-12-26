@@ -36,6 +36,7 @@ const Navbar = () => {
     { name: "SFW AI Sales Bot", url: "https://sfwtechnologiesrag.vercel.app/" },
     { name: "Executive Financial Management Dashboard", url: "https://sfwexecutivedashboard.streamlit.app/" },
     { name: "SFW Zerra", url: "https://zerra-2025.vercel.app/" },
+    { name: "CRM", url: "https://dev-crm.up.railway.app/" },
   ];
 
   const applicationLinks = [
@@ -43,7 +44,6 @@ const Navbar = () => {
     { name: "Project Management Software", url: "https://gcc-ui-production.up.railway.app/" },
     { name: "Learning management System", url: "https://lms-ui-production.up.railway.app/" },
     { name: "Clinic Management System", url: "https://smartclinic.lovable.app" },
-    { name: "CRM", url: "https://dev-crm.up.railway.app/" },
   ];
 
   const figmaLinks = [
