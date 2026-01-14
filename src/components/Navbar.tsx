@@ -37,13 +37,11 @@ const Navbar = () => {
     { name: "Executive Financial Management Dashboard", url: "https://sfwexecutivedashboard.streamlit.app/" },
     { name: "SFW Zerra", url: "https://zerra-2025.vercel.app/" },
     { name: "CRM", url: "https://dev-crm.up.railway.app/" },
-    { name: "SFW -Gram", url: "https://sfwgram.vercel.app/" },
   ];
 
   const applicationLinks = [
     { name: "Employee Onboarding App", url: "https://employee-onboarding-portal-production.up.railway.app/" },
     { name: "Project Management Software", url: "https://gcc-ui-production.up.railway.app/" },
-    { name: "Learning management System", url: "https://lms-ui-production.up.railway.app/" },
     { name: "Clinic Management System", url: "https://smartclinic.lovable.app" },
   ];
 
