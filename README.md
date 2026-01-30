@@ -1,69 +1,92 @@
-# SFW Technologies - Demo Showcase
+# SFW ZERRA - Frontend
 
-## Project Overview
+This is the frontend application for **SFW ZERRA**, an AI-powered data analytics platform. It provides a modern, interactive dashboard for connecting to data sources, visualizing analytics, and generating insights.
 
-SFW Technologies Demo Showcase is a modern web application showcasing AI-powered solutions including Sales Bot, Matching Tool, and Financial Dashboard.
+## 🚀 How to Run This Project
 
-## Getting Started
+Follow these steps to get the project running on your local machine.
 
-### Prerequisites
+### **Prerequisites**
+*   **Node.js**: You must have Node.js installed (LTS version recommended).
+    *   Check if installed: `node -v`
+    *   [Download Node.js](https://nodejs.org/)
 
-- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### **Step 1: Install Dependencies**
+Open your terminal/command prompt in the project root directory (`C:\projects\zerra-frontend`) and run:
 
-### Installation
-
-```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory
-cd sfw-demo-showcase-main
-
-# Step 3: Install the necessary dependencies
+```bash
 npm install
+```
+*This downloads all the necessary libraries required for the project.*
 
-# Step 4: Start the development server
+### **Step 2: Start the Development Server**
+Run the following command to start the app:
+
+```bash
 npm run dev
 ```
 
-The application will be available at `http://localhost:8080`
+### **Step 3: Open in Browser**
+Once the server starts, you will see a local URL in the terminal (usually `http://localhost:8080` or `http://localhost:5173`).
 
-## Technologies Used
+Open your web browser and go to:
+**[http://localhost:8080](http://localhost:8080)**
 
-This project is built with:
+---
 
-- **Vite** - Fast build tool and dev server
-- **TypeScript** - Type-safe JavaScript
-- **React** - UI library
-- **shadcn-ui** - Component library
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Router** - Client-side routing
+## 🧪 How to Use the Demo Features (Mock Data)
 
-## Available Scripts
+Since this frontend connects to a simulated backend for demonstration purposes, you can use the **Quick Connect** feature to generate instant dashboards.
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+1.  **Navigate to Data Sources:**
+    *   Click on **Data Sources** in the left sidebar.
 
-## Project Structure
+2.  **Connect a Database:**
+    *   Click on **PostgreSQL** or **MySQL** under "Quick Connect".
+    *   A popup will appear.
 
-```
-├── public/          # Static assets
-├── src/
-│   ├── assets/      # Images and logos
-│   ├── components/  # React components
-│   ├── pages/       # Page components
-│   └── main.tsx     # Entry point
-└── index.html       # HTML template
-```
+3.  **Enter Credentials:**
+    *   You can use **any** dummy credentials for this demo.
+    *   **Host:** `localhost`
+    *   **Username:** `admin`
+    *   **Password:** `1234`
 
-## Deployment
+4.  **Test & Connect:**
+    *   Click **Test Connection** to verify.
+    *   Click **Connect** to proceed.
 
-Build the project for production:
+5.  **Import Data:**
+    *   Select a table (e.g., `public.orders`) from the list.
+    *   Click **Import Selected Data**.
 
-```sh
+6.  **View Analytics:**
+    *   The app will automatically redirect you to the **Analytics** page.
+    *   A dashboard with charts, KPIs, and trends will be generated instantly!
+
+---
+
+## 🛠️ Build for Production
+
+To create an optimized production build:
+
+```bash
 npm run build
 ```
 
-The built files will be in the `dist` directory, ready to be deployed to any static hosting service.
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 📂 Project Structure
+
+*   **`src/pages`**: Main application pages (Dashboard, Analytics, DataSources).
+*   **`src/components`**: Reusable UI components (Charts, Modals, Sidebar).
+*   **`src/services`**: Logic for Mock Data handling (`MockDataService.ts`).
+*   **`src/lib`**: Utility functions for chart generation.
+
+---
+
+## 📝 License
+This project is proprietary software of SFW ZERRA.
