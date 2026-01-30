@@ -55,6 +55,7 @@ const Navbar = () => {
     { name: "Appointment Booking System", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=5%3A91&node-id=5-95&viewport=202%2C141%2C0.28&t=IcFr4dcam8aU0Xet-1&scaling=contain&content-scaling=fixed&starting-point-node-id=5%3A92" },
     { name: "SalesBot-AI-Conversational-Sales-Analytics-Platform", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=29%3A9351&node-id=29-9360&p=f&viewport=427%2C325%2C0.15&t=XAR5ssidOmpwOqH3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A9352" },
     { name: "Gen-AI-SFW-Matching-Tool", url: "https://www.figma.com/proto/dP4FH4XkIzH86DRCXpb5pF/Case-study-Final?page-id=29%3A9325&node-id=29-9334&viewport=40%2C446%2C0.06&t=V1lOI4s9TkbGhJsv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A9326" },
+    { name: "Staff Management App", url: "https://www.figma.com/design/Om0rRz4yXAWYLQozf0clxA/SFW---HR-Design?node-id=0-1&t=barkUouD8x4us4wc-1" },
   ];
 
   const caseStudyLinks = [
